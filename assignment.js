@@ -28,3 +28,53 @@ function budgetCalculator(ghori, phone, laptop){
   return totalCost;
 }
 // console.log(budgetCalculator(3,.35,2))
+
+//Calculation of hotel cost of staying days
+function hotelCost(days){
+  if(days < 0){
+    return "Days can not be negative";
+  }
+  else if(!(typeof days == "number")){
+    return "Enter a number";
+  }
+  else if(days%1 > 0){
+    return "Enter a integer number of days"
+  }
+  var cost = 0;
+  var firstTen, secondTen, lastDays;
+  firstTen = secondTen = lastDays = 0;
+  if(days <= 10){
+      firstTen = days * 100;   
+  }
+  else if(days <= 20){
+    firstTen = (10 * 100);
+    secondTen = (days - 10) * 80;
+  }
+  else{
+    firstTen = (10 * 100);
+    secondTen = (10 * 80);
+    lastDays = (days - 20) * 50;
+  }
+  cost = firstTen + secondTen + lastDays;
+  return cost;
+}
+// console.log(hotelCost(24));
+//Finding a friend's longest name 
+function megaFriend(friends){
+  if(friends.length == 0){
+    return "Give some name of your friends in an array";
+  }
+  var len = 0;
+  var longestName = "";
+  for(var name = 0; name < friends.length; name++){
+    if(typeof friends[name] == "string" && friends[name].length > len){
+      longestName = friends[name];
+      len = friends[name].length;
+    }
+  }
+  if(len == 0){
+    return "Push some valid name of your friends"
+  }
+  return longestName;
+}
+console.log(megaFriend([]))
