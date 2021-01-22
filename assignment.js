@@ -42,7 +42,7 @@ function hotelCost(days){
   var firstTen, secondTen, lastDays;
   firstTen = secondTen = lastDays = 0;
   if(days <= 10){
-      firstTen = days * 100;   
+    firstTen = days * 100;   
   }
   else if(days <= 20){
     firstTen = (10 * 100);
