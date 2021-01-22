@@ -77,4 +77,4 @@ function megaFriend(friends){
   }
   return longestName;
 }
-console.log(megaFriend([]))
+console.log(megaFriend(['mim', 'dim', 'mihal', '234493', '23']))
