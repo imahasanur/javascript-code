@@ -11,7 +11,6 @@ function kilometerToMeter(kiloMeter){
   meter = Number(meter.toFixed(2));
   return meter;
 }
-// console.log(kilometerToMeter(null))
 
 //Caluculation of total amount of products
 function budgetCalculator(ghori, phone, laptop){
@@ -27,7 +26,6 @@ function budgetCalculator(ghori, phone, laptop){
   var totalCost = (ghori*50) + (phone*100) + (laptop*500);
   return totalCost;
 }
-// console.log(budgetCalculator(3,.35,2))
 
 //Calculation of hotel cost of staying days
 function hotelCost(days){
@@ -58,7 +56,7 @@ function hotelCost(days){
   cost = firstTen + secondTen + lastDays;
   return cost;
 }
-// console.log(hotelCost(24));
+
 //Finding a friend's longest name 
 function megaFriend(friends){
   if(friends.length == 0){
@@ -77,4 +75,3 @@ function megaFriend(friends){
   }
   return longestName;
 }
-console.log(megaFriend(['mim', 'dim', 'mihal', '234493', '23']))
