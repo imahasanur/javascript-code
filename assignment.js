@@ -5,7 +5,7 @@ function kilometerToMeter(kiloMeter){
     return "Measurement can not be negative, enter a positive value";
   }
   else if(!(typeof kiloMeter == "number")){
-      return "Enter a number";
+    return "Enter a number";
   }
   meter = kiloMeter *1000; // 1 km = 1000 meter;
   meter = Number(meter.toFixed(2));
@@ -36,7 +36,7 @@ function hotelCost(days){
     return "Enter a number";
   }
   else if(days%1 > 0){
-    return "Enter a integer number of days"
+    return "Enter a integer number of days";
   }
   var cost = 0;
   var firstTen, secondTen, lastDays;
@@ -71,7 +71,7 @@ function megaFriend(friends){
     }
   }
   if(len == 0){
-    return "Push some valid name of your friends"
+    return "Push some valid name of your friends";
   }
   return longestName;
 }
